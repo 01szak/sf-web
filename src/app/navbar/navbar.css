@@ -1,0 +1,47 @@
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5vh;
+  max-height: 100px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.38);
+  border-bottom-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+main :first-child {
+  margin-right: auto;
+}
+.navElement {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  display: grid;
+  place-items: center;
+}
+
+.logo {
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 45px;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+a, img:hover {
+  cursor: pointer;
+}
