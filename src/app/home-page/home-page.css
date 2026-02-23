@@ -5,7 +5,7 @@ main {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  gap: 300px;
+  gap: 200px;
 }
 
 img {
@@ -35,11 +35,10 @@ img {
   grid-area: 1/1;
 
   max-width: 750px;
+  max-height: 300px;
   margin: 0 40px 0 40px;
   padding: 10px;
   border-radius: 12px;
-
-  font-size: 1.5em;
 
   background-color: rgba(0, 0, 0, 0.38);
 }
@@ -48,28 +47,40 @@ p {
   margin: 0;
 }
 
-.collageSection {
+.aboutUsHeader {
+  justify-self: center;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+}
+.aboutUs {
+  justify-self: center;
+}
+
+.aboutSection{
   display: flex;
-  flex-direction: row;
-  padding: 20px;
-  gap: 70px
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
 }
 
-.collageContainer {
-  background-color: white;
-  padding: 5px;
-  width: 45%;
-  border-radius: 12px;
+app-about-component {
+  width: 100%;
 }
 
-.collageTextContainer {
-  display: grid;
-  width: 45%;
-  border-right: dotted white 1px;
-  padding-right: 69px;
+.autoShow {
+  animation: appear-on-scroll both;
+  animation-timeline: view();
 }
 
-.collageTextWrapper {
-  grid-area: 1/1;
-  align-self: center;
+@keyframes appear-on-scroll {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
 }
+x

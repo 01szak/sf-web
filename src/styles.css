@@ -4,4 +4,6 @@ html, body {
   height: 100vh;
   background-color: #505f33;
   color: white;
+  overflow-x: clip;
+  font-size: 1.1rem;
 }

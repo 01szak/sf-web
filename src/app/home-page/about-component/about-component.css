@@ -1,0 +1,83 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+
+}
+
+p {
+  margin: 0;
+}
+
+.imageContainer {
+  background-color: white;
+  padding: 5px;
+  width: 100%;
+  max-width: 280px;
+  height: 500px;
+  border-radius: 12px;
+}
+
+.textContainer {
+  display: grid;
+  width: 45%;
+  padding-right: 69px;
+}
+
+.textWrapper {
+  grid-area: 1/1;
+  align-self: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+
+.left  {
+  width: 45%;
+}
+
+.right {
+  padding: 5px;
+  width: 45%;
+}
+
+.autoReveal {
+  filter: saturate(0) contrast(4) brightness(.1) blur(2px);
+  opacity: 0;
+  scale: 0.95;
+  transform: scale(.95) translateY(4rem);
+  translate: 0 4rem;
+  transition: all 0.8s ease-in-out;
+}
+
+.autoReveal.revealed {
+  filter: none;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  scale: 1;
+  translate: 0 0;
+}
+
+.autoShow {
+  animation: appear-on-scroll both;
+  animation-timeline: view();
+}
+
+@keyframes appear-on-scroll {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
