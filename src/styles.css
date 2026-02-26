@@ -2,6 +2,8 @@ html, body {
   margin: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: #505f33;
+  background-color: transparent;
   color: white;
+  overflow-x: clip;
+  font-size: 1.1rem;
 }

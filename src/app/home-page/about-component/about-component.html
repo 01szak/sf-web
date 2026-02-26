@@ -1,0 +1,31 @@
+<div class="main">
+    <div [ngClass]="{
+    'left': true,
+    'imageContainer autoReveal': left.includes('.jpeg'),
+    'textContainer autoShow': !left.includes('.jpeg')
+    }">
+      @if (left.includes('.jpeg')) {
+        <img src="{{left}}" alt="about-photo" >
+      } @else {
+        <div class="textWrapper">
+          <h2>{{header}}</h2>
+          <p>{{left}}</p>
+        </div>
+      }
+    </div>
+
+    <div  [ngClass]="{
+    'right': true,
+    'imageContainer autoReveal': right.includes('.jpeg'),
+    'textContainer autoShow': !right.includes('.jpeg')
+    }">
+      @if (right.includes('.jpeg')) {
+        <img src="{{right}}" alt="about-photo" >
+      } @else {
+        <div class="textWrapper">
+          <h2>{{header}}</h2>
+          <p>{{right}}</p>
+        </div>
+      }
+    </div>
+</div>

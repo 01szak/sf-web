@@ -1,6 +1,6 @@
 <main>
   <div class="mainSection">
-    <img src="/main-page-photo1.jpg" alt="" class="mainImg">
+    <img src="/main/main-page-photo1.jpg" alt="" class="mainImg">
     <div class="mainTextContainer">
       <h1><strong>Camper Park Stary Folwark wita!</strong></h1>
       <p>consectetur adipisicing elit. Aperiam, cupiditate quibusdam!</p>
@@ -8,16 +8,46 @@
     </div>
   </div>
 
-  <div class="collageSection">
-    <div class="collageTextContainer">
-      <div class="collageTextWrapper">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>consectetur adipisicing elit. Accusantium alias assumenda consequuntur, eos esse est excepturi illo maiores,</p>
-        <p>odit optio praesentium vel, veniam voluptate! Architecto consequuntur eveniet magnam quidem quos.</p>
-      </div>
+  <div class="aboutSectionVid autoReveal">
+    <div class="aboutUsHeader autoShow">
+      <h1 class="aboutUs">O nas</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis consequatur dolore harum similique sunt veniam veritatis?
+        Alias animi eaque error fugit illum ipsa, ipsam molestias officiis similique ut,
+        vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, officia, veniam!
+        A architecto beatae deleniti dicta earum ipsa ipsam labore nam nihil nisi officiis praesentium, quasi qui reiciendis reprehenderit tenetur!</p>
     </div>
-    <div class="collageContainer">
-      <img src="collage-photo.jpg" alt="" class="collageImg">
-    </div>
+      <app-video-component />
+  </div>
+  <div class="aboutSectionPhotos">
+
+      <app-about-component
+        [left]="'/about/hamak.jpeg'"
+        [header]="'Lorem ipsum dolor sit amet'"
+        [right]="
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis, corporis dolores, doloribus ducimus earum excepturi modi nesciunt non,' +
+         ' odio similique sint soluta suscipit tempora tenetur ut veniam? Iste, officiis? consectetur adipisicing elit.' +
+          ' Accusantium alias assumenda consequuntur, eos esse est excepturi illo maiores,consectetur adipisicing elit. Accusantium alias assumenda consequuntur, eos esse est excepturi illo maiores,odit optio praesentium vel, ' +
+           'veniam voluptate! Architecto consequuntur eveniet magnam quidem quos. consectetur adipisicing elit. Accusantium alias assumenda consequuntur, '
+        "
+      />
+
+      <app-about-component
+        [left]="
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis, corporis dolores, doloribus ducimus earum excepturi modi nesciunt non,' +
+        ' odio similique sint soluta suscipit tempora tenetur ut veniam? Iste, officiis? consectetur adipisicing elit.' +
+        ' Accusantium alias assumenda consequuntur, eos esse est excepturi illo maiores,consectetur adipisicing elit. Accusantium alias assumenda consequuntur, '
+        "
+        [header]="'Lorem ipsum dolor sit amet'"
+        [right]="'/about/ognisko.jpeg'"
+      />
+
+      <app-about-component
+        [left]="'/about/parcele.jpeg'"
+        [header]="'Lorem ipsum dolor sit amet'"
+        [right]="
+          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis, corporis dolores, doloribus ducimus earum excepturi modi nesciunt non,' +
+          ' odio similique sint soluta suscipit tempora tenetur ut veniam? Iste, officiis? consectetur adipisicing elit.'
+          "
+      />
   </div>
 </main>

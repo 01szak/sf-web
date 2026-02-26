@@ -1,0 +1,16 @@
+.autoReveal {
+  filter: saturate(0) contrast(4) brightness(.1) blur(2px);
+  opacity: 0;
+  scale: 0.95;
+  transform: scale(.95) translateY(4rem);
+  translate: 0 4rem;
+  transition: all 0.8s ease-in-out;
+}
+
+.autoReveal.revealed {
+  filter: none;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  scale: 1;
+  translate: 0 0;
+}
