@@ -5,7 +5,7 @@ import {AutoRevealComponent} from '../auto-reveal-component/auto-reveal-componen
   selector: 'app-video-component',
   imports: [],
   templateUrl: './video-component.html',
-  styleUrls: ['./video-component.css','../auto-reveal-component/auto-reveal-component.css']
+  styleUrls: ['./video-component.css']
 })
 export class VideoComponent extends AutoRevealComponent implements AfterViewInit {
 

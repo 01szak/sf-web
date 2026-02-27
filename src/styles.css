@@ -1,9 +1,34 @@
 html, body {
-  margin: 0px;
+  margin: 0;
   width: 100vw;
   height: 100vh;
   background-color: transparent;
-  color: white;
+  color: var(--color-text-light);
   overflow-x: clip;
   font-size: 1.1rem;
+}
+
+:root {
+  /* === BACKGROUNDS === */
+  --color-bg-main: #505f33;
+  --color-bg-section-dark: #3e4a27;
+  --color-bg-footer: #2a331b;
+
+  /* === LIGHT SECTION / CONTRAST === */
+  --color-bg-light: #e8e6d8;
+  --color-bg-light-soft: #f3f1e7;
+
+  /* === TEKXT === */
+  --color-text-light: #e8e6d8;
+  --color-text-dark: #1f1f1f;
+  --color-text-muted: #bfc5a8;
+
+  /* === ACCENTS === */
+  --color-accent-gold: #c2a14a;
+  --color-accent-hover: #b89a3c;
+  --color-accent-warm: #b45f2c;
+
+  /* === BORDER / LINES === */
+  --color-border-subtle: #3e4a27;
+  --color-border-light: #6f7f47;
 }

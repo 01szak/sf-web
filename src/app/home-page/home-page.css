@@ -6,7 +6,7 @@ main {
   flex-direction: column;
   align-content: space-between;
   gap: 200px;
-  background-color: #505f33;
+  background-color: var(--color-bg-main);
 
 }
 
@@ -75,7 +75,7 @@ app-video-component {
 .aboutSectionPhotos {
   width: 100%;
   height: 100%;
-  background-color: #33545e;
+  background-color: var(--color-bg-section-dark);
 
   padding: 100px 0 100px 0;
   /*-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);*/
@@ -104,3 +104,4 @@ app-video-component {
     transform: translateY(0);
   }
 }
+
