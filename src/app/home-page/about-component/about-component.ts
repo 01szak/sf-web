@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, Input, NgModule, OnDestroy, OnInit, Renderer2} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {NgClass} from '@angular/common';
 import {AutoRevealComponent} from '../auto-reveal-component/auto-reveal-component';
 

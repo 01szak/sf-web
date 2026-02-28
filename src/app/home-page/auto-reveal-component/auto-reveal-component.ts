@@ -19,7 +19,7 @@ export class AutoRevealComponent implements AfterViewInit, OnDestroy {
     const elements = this.el.nativeElement.querySelectorAll('.autoReveal');
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-
+        console.log(entry)
         const ratio = entry.intersectionRatio;
 
         if (ratio > 0.3) {

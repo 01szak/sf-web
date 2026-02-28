@@ -1,8 +1,8 @@
 footer {
   width: 100%;
-  height: 40vh;
+  height: 40%;
   max-height: 450px;
-  background-color: #1c2212;
+  background-color: var(--color-bg-footer);
   display: flex;
   flex-direction: column;
   gap: 15px;

@@ -13,8 +13,12 @@ nav {
   align-items: center;
   list-style: none;
   transition: top 0.3s, background-color 0.3s ease;
-
+  z-index: 100;
 }
+.navElement:hover {
+  color: var(--color-accent-hover);
+}
+
 
 .onScroll {
   background-color: var(--color-bg-light);
@@ -45,7 +49,6 @@ img {
 }
 
 a {
-  /*color: var(--colot-);*/
   font-weight: bold;
   font-size: 1em;
 }
